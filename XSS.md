@@ -47,12 +47,22 @@ We can know if we are facing DOM based XSS if the payload does not appear in the
 ### Functions (Sinks) That Could Cause DOM XSS
 You can perform a quick search (Ctrl+F) for the following functions in the client-side code
 - `document.write()`
-- `innerHTML()` (does not allow the use of `<script>` tags within it, try other payloads (e.g., `<img src=x onerror=alert(1)>`))
-- `outerHTML()`
+- `document.writeln()`
+- `document.domain`
+- `.innerHTML()` (does not allow the use of `<script>` tags within it, try other payloads (e.g., `<img src=x onerror=alert(1)>`))
+- `.outerHTML()`
 #### Ajax Specific Functions
 - `add()`
 - `after()`
 - `append()`
+- `html()`
+- `parseHTML()`
+- `prepend()`
+- `insertAfter()`
+- `before()`
+- `insertBefore()`
+- `replaceAll()`
+- `replaceWith()`
 
 ### Reflected XSS In Template Literals
 When an input is reflected on the page and within the page's source code it is inside a JS template literal (string within \`\`) we can execute JS functions with payloads like the following `${alert()}`.
