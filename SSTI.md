@@ -11,7 +11,7 @@ Start by injecting the payload `{7*7}`, then follow the diagram from left to rig
 - Red = unsuccessful arrow
 A successful result for `{7*7}` would be if you see `49` rendered on the web page. That means you have successfully injected a payload.
 
-![SSTI Diagram](ssti-diagram.webp)
+![SSTI Diagram](assets/ssti-diagram.webp)
 
 ## Jinja Exploitation
 Jinja is a Python templating engine that is usually used with either Flask or Django. The payloads below are targeted at Flask applications. If the payloads do not work check if the app is built with Python and Django.
