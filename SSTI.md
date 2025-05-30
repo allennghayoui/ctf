@@ -10,6 +10,7 @@ Start by injecting the payload `{7*7}`, then follow the diagram from left to rig
 - Green = successful arrow
 - Red = unsuccessful arrow
 A successful result for `{7*7}` would be if you see `49` rendered on the web page. That means you have successfully injected a payload.
+
 ![SSTI Diagram](ssti-diagram.webp)
 
 ## Jinja Exploitation
